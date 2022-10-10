@@ -1,0 +1,28 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 260px;
+    margin: 15px;
+    text-align: center;
+
+    &__logo {
+        @include size(100px);
+
+        margin: 0 auto 20px;
+        background-color: red;
+        border-radius: 20px;
+    }
+    &__title {
+        @include font-style($open-sans-regular, 18px, $black);
+
+        margin-bottom: 15px;
+        font-weight: 900;
+    }
+    &__description {
+        @include font-style($open-sans-regular, 16px, $gray);
+
+        line-height: 24px;
+        font-weight: 500;
+    }
+}

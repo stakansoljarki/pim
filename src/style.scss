@@ -1,0 +1,18 @@
+@import 'src/assets/scss/reset';
+@import 'src/assets/scss/extends';
+@import 'src/assets/scss/fonts';
+@import 'src/assets/scss/colors';
+@import 'src/assets/scss/mixins';
+@import 'src/assets/scss/variables';
+
+//Layout
+@import "./app/layouts/header/header";
+@import "./app/layouts/composite/composite";
+@import "./app/layouts/about/about";
+@import "./app/layouts/product/product";
+@import "./app/layouts/Characteristics/characteristics";
+@import "./app/layouts/Contacts/contacts";
+
+//Components
+@import "./app/components/Product-card/product-card";
+@import "./app/components/Table/table";

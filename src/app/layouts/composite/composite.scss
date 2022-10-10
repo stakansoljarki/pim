@@ -1,0 +1,16 @@
+.composite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/composite.jpg") no-repeat center;
+
+    &__title {
+        @include font-style($open-sans-regular, 50px, $white);
+        @include beveled-corners($red, 30px);
+
+        width: 500px;
+        padding: 10px;
+        text-align: center;
+    }
+}

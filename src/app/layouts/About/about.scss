@@ -1,0 +1,28 @@
+.about {
+    padding: 70px 0 80px;
+    background-color: $light-gray;
+
+    &__container {
+        @extend .container;
+
+        text-align: center;
+    }
+    &__title {
+        @include font-style($open-sans-regular, 34px, $black);
+
+        font-weight: 900;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+    }
+    &__description {
+        @include font-style($open-sans-regular, 20px, $gray);
+
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 28px;
+    }
+    &__bold {
+        color: $black;
+        font-weight: 900;
+    }
+}

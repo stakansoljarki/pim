@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #222;
+    padding: 20px 0;
+
+    &__container {
+        @extend .container;
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__logo {
+        @include font-style($open-sans-regular, 24px, $white);
+    }
+    &__nav-list {
+        display: flex;
+    }
+    &__nav-link {
+        @include font-style($open-sans-regular, 20px, $white);
+
+        padding: 16px;
+        transition: .3s;
+        &:hover {
+            color: #6dc9c9;
+        }
+    }
+}

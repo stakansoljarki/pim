@@ -1,0 +1,31 @@
+.contacts {
+    padding: 70px 0 80px;
+
+    &__container {
+        @extend .container;
+
+        text-align: center;
+    }
+    &__title {
+        @include font-style($open-sans-regular, 34px, $black);
+
+        margin-bottom: 30px;
+    }
+    &__item {
+        @include font-style($open-sans-regular, 20px, $gray);
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    &__link {
+        margin-left: 12px;
+        font-size: 22px;
+        color: $black;
+        border-bottom: 1px solid transparent;
+        transition: .3s;
+        &:hover {
+            border-color: $black;
+        }
+    }
+}
