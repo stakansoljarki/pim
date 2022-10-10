@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './style.scss'
-import Header from "./app/layouts/header/Header";
-import Composite from "./app/layouts/composite/Composite";
+import Header from "./app/layouts/Header/Header";
+import Composite from "./app/layouts/Composite/Composite";
 import About from "./app/layouts/About/About";
-import Product from "./app/layouts/product/Product";
+import Product from "./app/layouts/Product/Product";
 import Characteristics from "./app/layouts/Characteristics/Characteristics";
 import Contacts from "./app/layouts/Contacts/Contacts";
 

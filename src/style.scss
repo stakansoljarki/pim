@@ -6,10 +6,10 @@
 @import 'src/assets/scss/variables';
 
 //Layout
-@import "./app/layouts/header/header";
-@import "./app/layouts/composite/composite";
-@import "./app/layouts/about/about";
-@import "./app/layouts/product/product";
+@import "app/layouts/Header/header";
+@import "app/layouts/Composite/composite";
+@import "./app/layouts/About/about";
+@import "app/layouts/Product/product";
 @import "./app/layouts/Characteristics/characteristics";
 @import "./app/layouts/Contacts/contacts";
 
