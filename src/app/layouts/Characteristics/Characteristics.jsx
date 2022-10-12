@@ -8,7 +8,9 @@ const Characteristics = () => {
             <div className="characteristics__container">
                 <h2 className="characteristics__title">Чому саме композитна арматура?</h2>
                 <p className="characteristics__description">Мінімальна міцність арматури при розтязі в тоннах</p>
-                <Table/>
+                <div className="characteristics__wrap">
+                    <Table/>
+                </div>
             </div>
         </section>
     )

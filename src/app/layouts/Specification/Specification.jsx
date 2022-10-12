@@ -5,7 +5,7 @@ import image2 from './images/2.jpg'
 
 const Specification = () => {
     return (
-        <section className="specification">
+        <section className="specification"  id="product">
             <h2 className="specification__title">Продукція</h2>
             <div className="specification__container">
                 <a href="/" className="specification__link">

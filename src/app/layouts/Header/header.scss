@@ -18,14 +18,35 @@
     }
     &__nav-list {
         display: flex;
+        gap: 30px;
     }
     &__nav-link {
         @include font-style($open-sans-regular, 20px, $white);
 
-        padding: 16px;
+        display: block;
+        padding: 16px 0;
         transition: .3s;
         &:hover {
             color: #6dc9c9;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        &__nav {
+            position: absolute;
+            top: 75px;
+            left: 0;
+            right: 0;
+            transform: translateX(-100%);
+            padding: 40px;
+            transition: 0.3s ease;
+            background-color: $black;
+            &--mobile-open {
+                transform: translateX(0);
+            }
+        }
+        &__nav-list {
+            flex-direction: column;
         }
     }
 }
