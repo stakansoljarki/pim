@@ -10,6 +10,7 @@ import Characteristics from "./app/layouts/Characteristics/Characteristics";
 import Contacts from "./app/layouts/Contacts/Contacts";
 import Specification from "./app/layouts/Specification/Specification";
 import Projects from "./app/layouts/Projects/Projects";
+import Video from "./app/layouts/Video/Video";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
     <Characteristics/>
     <Specification/>
     <Projects/>
+    <Video/>
     <Contacts/>
   </React.StrictMode>
 );

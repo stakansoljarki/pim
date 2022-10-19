@@ -9,7 +9,8 @@
         @include font-style($open-sans-regular, 50px, $white);
         @include beveled-corners($red, 30px);
 
-        width: 500px;
+        text-transform: uppercase;
+        width: 600px;
         padding: 10px;
         text-align: center;
     }

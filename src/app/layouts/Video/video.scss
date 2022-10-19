@@ -1,0 +1,15 @@
+.video {
+  padding: 70px 0 80px;
+
+  &__container {
+    @extend .container;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__video {
+    width: 100%;
+    max-width: 1000px;
+  }
+}

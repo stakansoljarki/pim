@@ -8,11 +8,11 @@ const Contacts = () => {
                 <div className="contacts__wrap">
                     <p className="contacts__item">
                         Tel:
-                        <a href="tel:000-00-00-000" className="contacts__link">000-00-00-000</a>
+                        <a href="tel:+380978425148" className="contacts__link">+38 (097) 842-51-48</a>
                     </p>
                     <p className="contacts__item">
                         Email:
-                        <a href="mailto:expample@gmail.com" className="contacts__link">example@gmail.com</a>
+                        <a href="mailto:expample@gmail.com" className="contacts__link">svitcomposites@gmail.com</a>
                     </p>
                 </div>
             </div>
