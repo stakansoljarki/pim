@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
 import AnchorLink from "react-anchor-link-smooth-scroll/lib/anchor-link";
-import BurgerMenu from "../../components/BurgerMenu/BurgerMenu";
 import classNames from "classnames";
+import BurgerMenu from "../../components/BurgerMenu/BurgerMenu";
 
 const Header = () => {
     const [isBurgerActive, setBurgerActive] = useState(false);
