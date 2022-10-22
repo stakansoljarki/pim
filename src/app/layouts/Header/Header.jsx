@@ -11,7 +11,7 @@ const Header = () => {
         <header className="header">
             <div className="header__container">
                 <AnchorLink href="#home" className="header__logo">
-                    СвітКомпозитів
+                    Світ Композитів
                 </AnchorLink>
                 <nav className={classNames('header__nav', { 'header__nav--mobile-open': isBurgerActive })}>
                     <ul className="header__nav-list">
