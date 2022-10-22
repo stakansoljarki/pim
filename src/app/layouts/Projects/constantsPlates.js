@@ -4,6 +4,8 @@ import image3 from './images/testingPlates/3.jpg'
 import image4 from './images/testingPlates/4.jpg'
 import image5 from './images/testingPlates/5.jpg'
 import image6 from './images/testingPlates/6.jpg'
+import image7 from './images/testingPlates/7.jpg'
+import image8 from './images/testingPlates/8.jpg'
 
 const platesData = [
     {
@@ -23,6 +25,12 @@ const platesData = [
     },
     {
         src: `${image6}`
+    },
+    {
+        src: `${image7}`
+    },
+    {
+        src: `${image8}`
     }
 ]
 
