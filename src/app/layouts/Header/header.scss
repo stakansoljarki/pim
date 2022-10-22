@@ -3,8 +3,8 @@
     right: 0;
     left: 0;
     z-index: 999;
+    height: 75px;
     background-color: #222;
-    padding: 20px 0;
 
     &__container {
         @extend .container;
@@ -16,6 +16,8 @@
     }
     &__logo {
         @include font-style($open-sans-regular, 24px, $white);
+
+        text-transform: uppercase;
     }
     &__nav-list {
         display: flex;

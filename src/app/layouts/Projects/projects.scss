@@ -18,17 +18,32 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 20px;
+        column-gap: 20px;
+        row-gap: 40px;
     }
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 270px;
+        text-align: center;
+        &:hover {
+            cursor: pointer;
+            .projects {
+                &__img {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
     &__heading {
         @include font-style($open-sans-regular, 24px, $black);
 
-        margin-bottom: 30px;
+        line-height: 24px;
+    }
+    &__inner {
+        margin-bottom: 20px;
     }
     &__link {
         overflow: hidden;
@@ -42,8 +57,5 @@
         transition: .2s;
         overflow: hidden;
         border-radius: 50%;
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 }
