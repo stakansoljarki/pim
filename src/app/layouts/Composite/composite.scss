@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("images/composite.jpg") no-repeat center;
+    position: relative;
 
     &__title {
         @include font-style($open-sans-regular, 50px, $white);
@@ -13,5 +13,17 @@
         width: 600px;
         padding: 10px;
         text-align: center;
+    }
+    &__image {
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    @media screen and (max-width: 550px) {
+        &__title {
+            font-size: 34px;
+        }
     }
 }
