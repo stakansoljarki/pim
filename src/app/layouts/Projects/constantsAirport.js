@@ -1,11 +1,11 @@
-import airportImage1 from "./images/airport/1.jpg";
-import airportImage2 from "./images/airport/2.jpg";
-import airportImage3 from "./images/airport/3.jpg";
-import airportImage4 from "./images/airport/4.jpg";
-import airportImage5 from "./images/airport/5.jpg";
-import airportImage6 from "./images/airport/6.jpg";
-import airportImage7 from "./images/airport/7.jpg";
-import airportImage8 from "./images/airport/8.jpg";
+import airportImage1 from "./images/airport/1.webp";
+import airportImage2 from "./images/airport/2.webp";
+import airportImage3 from "./images/airport/3.webp";
+import airportImage4 from "./images/airport/4.webp";
+import airportImage5 from "./images/airport/5.webp";
+import airportImage6 from "./images/airport/6.webp";
+import airportImage7 from "./images/airport/7.webp";
+import airportImage8 from "./images/airport/8.webp";
 
 const airportData = [
     {

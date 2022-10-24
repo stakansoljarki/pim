@@ -1,7 +1,7 @@
-import image1 from './images/kyivPlates/1.jpg'
-import image2 from './images/kyivPlates/2.jpg'
-import image3 from './images/kyivPlates/3.jpg'
-import image4 from './images/kyivPlates/4.jpg'
+import image1 from './images/kyivPlates/1.webp'
+import image2 from './images/kyivPlates/2.webp'
+import image3 from './images/kyivPlates/3.webp'
+import image4 from './images/kyivPlates/4.webp'
 
 const kyivData = [
     {
