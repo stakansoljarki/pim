@@ -1,9 +1,9 @@
-import image1 from './images/kpi/1.jpg'
-import image2 from './images/kpi/2.jpg'
-import image3 from './images/kpi/3.jpg'
-import image4 from './images/kpi/4.jpg'
-import image5 from './images/kpi/5.jpg'
-import image6 from './images/kpi/6.jpg'
+import image1 from './images/kpi/6.webp'
+import image2 from './images/kpi/6.webp'
+import image3 from './images/kpi/6.webp'
+import image4 from './images/kpi/6.webp'
+import image5 from './images/kpi/6.webp'
+import image6 from './images/kpi/6.webp'
 
 const kpiData = [
     {

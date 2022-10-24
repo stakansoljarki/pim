@@ -1,6 +1,6 @@
-import image1 from './images/seams/1.jpg'
-import image2 from './images/seams/2.jpg'
-import image3 from './images/seams/3.jpg'
+import image1 from './images/seams/3.webp'
+import image2 from './images/seams/3.webp'
+import image3 from './images/seams/3.webp'
 
 const seamsData = [
     {

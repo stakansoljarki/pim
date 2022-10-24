@@ -1,9 +1,9 @@
-import image1 from './images/roadPlates/1.jpg'
-import image2 from './images/roadPlates/2.jpg'
-import image3 from './images/roadPlates/3.jpg'
-import image4 from './images/roadPlates/4.jpg'
-import image5 from './images/roadPlates/5.jpg'
-import image6 from './images/roadPlates/6.jpg'
+import image1 from './images/roadPlates/1.webp'
+import image2 from './images/roadPlates/2.webp'
+import image3 from './images/roadPlates/3.webp'
+import image4 from './images/roadPlates/4.webp'
+import image5 from './images/roadPlates/5.webp'
+import image6 from './images/roadPlates/6.webp'
 
 const roadData = [
     {

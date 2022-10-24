@@ -1,13 +1,14 @@
 import React from "react";
 
-import video from "./images/1.mp4"
-import image from "./images/1.png"
-
 const Video = () => {
     return (
         <section className="video">
             <div className="video__container">
-                <video className="video__video" src={video} controls poster={image}/>
+                <iframe className="video__video" src="https://www.youtube.com/embed/xbzvXbdXmSI"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+                </iframe>
             </div>
         </section>
     )
