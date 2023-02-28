@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {useTranslation} from "react-i18next";
 
 import img1 from "./img/1.jpg"
@@ -14,23 +15,78 @@ import img10 from "./img/10.jpg"
 import img11 from "./img/11.jpg"
 import img12 from "./img/12.jpg"
 
+const textAnimation = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom=> ({
+        x: 0,
+        opacity: 1,
+        transition: {delay: custom * 0.3}
+    }),
+}
+
 const Lira = () => {
     const {t} = useTranslation();
 
     return(
         <section className="lira">
             <div className="lira__container">
-                <h2 className="lira__title">{t("lira")}</h2>
+                <motion.h2
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.2, once: true}}
+                    custom={0.3}
+                    variants={textAnimation}
+                    className="lira__title"
+                >
+                    {t("lira")}
+                </motion.h2>
                 <div className="lira__wrap">
                     <div className="lira__text-wrap">
-                        <p className="lira__description">{t("lira description")}</p>
+                        <motion.p
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ amount: 0.4, once: true}}
+                            custom={0.3}
+                            variants={textAnimation}
+                            className="lira__description"
+                        >
+                            {t("lira description")}
+                        </motion.p>
                         <ul className="lira__list">
-                            <li className="lira__list-item">{t("lira item1")}</li>
-                            <li className="lira__list-item">{t("lira item2")}</li>
-                            <li className="lira__list-item">{t("lira item3")}</li>
+                            <motion.li
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ amount: 0.5, once: true}}
+                                custom={0.7}
+                                variants={textAnimation}
+                                className="lira__list-item">{t("lira item1")}</motion.li>
+                            <motion.li
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ amount: 0.6, once: true}}
+                                custom={0.9}
+                                variants={textAnimation}
+                                className="lira__list-item">{t("lira item2")}</motion.li>
+                            <motion.li
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ amount: 0.7, once: true}}
+                                custom={1.1}
+                                variants={textAnimation}
+                                className="lira__list-item">{t("lira item3")}</motion.li>
                         </ul>
                     </div>
-                    <div className="lira__photo-wrap">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.5, once: true}}
+                        custom={1}
+                        variants={textAnimation}
+                        className="lira__photo-wrap"
+                    >
                         <a
                             className="lira__link"
                             href={img1}
@@ -127,7 +183,7 @@ const Lira = () => {
                         >
                             <img src={img12} alt="" className="lira__img"/>
                         </a>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

@@ -1,8 +1,10 @@
 import React from "react";
+import {forwardRef} from "react";
+import {motion} from "framer-motion";
 
-const ProductCard = ({ src, alt, title, description }) => {
+const ProductCard = forwardRef(({ src, alt, title, description, custom }, ref) => {
     return (
-        <div className="product-card">
+        <div custom={custom} ref={ref} className="product-card">
             <div className="product-card__logo">
                 <img src={src} alt={alt} className="product-card__logo-img"/>
             </div>
@@ -10,6 +12,8 @@ const ProductCard = ({ src, alt, title, description }) => {
             <p className="product-card__description">{description}</p>
         </div>
     )
-}
+})
 
 export default ProductCard;
+
+export const MProductCard = motion(ProductCard);

@@ -1,10 +1,23 @@
 import React, {useState} from "react";
+import { motion } from "framer-motion";
 import {useTranslation} from "react-i18next";
 
 import Modal from "../../components/Modal/Modal";
 
 import image1 from './images/1.png'
 import image2 from './images/2.jpg'
+
+const textAnimation = {
+    hidden: {
+        y: 100,
+        opacity: 0,
+    },
+    visible: custom=> ({
+        y: 0,
+        opacity: 1,
+        transition: {delay: custom * 0.3}
+    }),
+}
 
 const Specification = () => {
     const [modalActive, setModalActive] = useState()
@@ -13,20 +26,45 @@ const Specification = () => {
 
     return (
         <section className="specification"  id="product">
-            <h2 className="specification__title">{t("product")}</h2>
+            <motion.h2
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.2, once: true}}
+                custom={0.3}
+                variants={textAnimation}
+                className="specification__title"
+            >
+                {t("product")}
+            </motion.h2>
             <div className="specification__container">
-                <button onClick={() => setModalActive(true)} className="specification__link">
+                <motion.button
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.3, once: true}}
+                    custom={0.5}
+                    variants={textAnimation}
+                    onClick={() => setModalActive(true)}
+                    className="specification__link"
+                >
                     <div className="specification__logo">
                         <img src={image2} alt="" className="specification__img"/>
                     </div>
                     <p className="specification__name">{t("FRP rebar")}</p>
-                </button>
-                <button onClick={() => setModalActive(true)} className="specification__link">
+                </motion.button>
+                <motion.button
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.3, once: true}}
+                    custom={0.7}
+                    variants={textAnimation}
+                    onClick={() => setModalActive(true)}
+                    className="specification__link"
+                >
                     <div className="specification__logo">
                         <img src={image1} alt="" className="specification__img"/>
                     </div>
                     <p className="specification__name">{t("FRP rod")}</p>
-                </button>
+                </motion.button>
             </div>
             <Modal active={modalActive} setActive={setModalActive}>
                 <h2 className="modal__title">{t("contact us")}</h2>

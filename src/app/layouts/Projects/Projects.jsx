@@ -1,6 +1,7 @@
 import React from "react";
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
+import { motion } from "framer-motion";
 import {useTranslation} from "react-i18next";
 
 import lvivData from "./constantsLviv";
@@ -22,15 +23,42 @@ import airportData from "./constantsAirport";
 import minerData from "./constantsMiner";
 
 
+const textAnimation = {
+    hidden: {
+        x: -100,
+        opacity: 0,
+    },
+    visible: custom=> ({
+        x: 0,
+        opacity: 1,
+        transition: {delay: custom * 0.3}
+    }),
+}
+
 const Projects = () => {
     const {t} = useTranslation();
 
     return (
         <section className="projects" id="projects">
             <div className="projects__container">
-                <h2 className="projects__title">{t("projects")}</h2>
+                <motion.h2
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.2, once: true}}
+                    custom={0.5}
+                    variants={textAnimation}
+                    className="projects__title"
+                >
+                    {t("projects")}
+                </motion.h2>
                 <div className="projects__wrap">
-                    <div className="projects__item">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={0.8}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {lvivData.map((projectItem) => (
                                 <a
@@ -44,8 +72,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Tram tracks")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={0.6}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {ternopilData.map((projectItem) => (
                                 <a
@@ -59,8 +93,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Highway")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={0.4}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {khersonData.map((projectItem) => (
                                 <a
@@ -74,8 +114,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Foundation slab")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={0.2}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {aksData.map((projectItem) => (
                                 <a
@@ -89,8 +135,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("FRP rod")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={0.8}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {lisnykyData.map((projectItem) => (
                                 <a
@@ -104,8 +156,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Piles")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={1}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {concretingData.map((projectItem) => (
                                 <a
@@ -119,8 +177,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("concrete")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={1.2}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {kyivData.map((projectItem) => (
                                 <a
@@ -134,8 +198,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Precinct territory")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={1.4}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {irpinData.map((projectItem) => (
                                 <a
@@ -149,8 +219,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Inspection in Irpin")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={1.4}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {overlapData.map((projectItem) => (
                                 <a
@@ -164,8 +240,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Monolithic overlap")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={1.6}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {zbvData.map((projectItem) => (
                                 <a
@@ -179,8 +261,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Composite concrete products")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={1.8}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {roadData.map((projectItem) => (
                                 <a
@@ -194,8 +282,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Road slabs")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={2}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {platesData.map((projectItem) => (
                                 <a
@@ -209,8 +303,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("NDIBK")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={2.4}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {kpiData.map((projectItem) => (
                                 <a
@@ -224,8 +324,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("KPI")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={2.6}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {seamsData.map((projectItem) => (
                                 <a
@@ -239,8 +345,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("seams")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={2.8}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {livanData.map((projectItem) => (
                                 <a
@@ -254,8 +366,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Lebanon")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={3}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {airportData.map((projectItem) => (
                                 <a
@@ -269,8 +387,14 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Vinnytsia Airport")}</h3>
-                    </div>
-                    <div className="projects__item">
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.3, once: true}}
+                        custom={3.2}
+                        variants={textAnimation}
+                        className="projects__item">
                         <div className="projects__inner">
                             {minerData.map((projectItem) => (
                                 <a
@@ -284,7 +408,7 @@ const Projects = () => {
                             ))}
                         </div>
                         <h3 className="projects__heading">{t("Vatutine Stadium Shakhtar")}</h3>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
