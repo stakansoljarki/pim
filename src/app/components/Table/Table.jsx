@@ -1,27 +1,30 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 const Table = () => {
+    const {t} = useTranslation();
+
     return (
         <div className="table">
             <div className="table__col">
-                <div className="table__head-item">Діаметр арматури</div>
-                <div className="table__row-item">6 (28,3 мм2)</div>
-                <div className="table__row-item">8 (50,3 мм2)</div>
-                <div className="table__row-item">10 (78,5 мм2)</div>
-                <div className="table__row-item">12 (113 мм2)</div>
-                <div className="table__row-item">14 (154 мм2)</div>
-                <div className="table__row-item">16 (201 мм2)</div>
-                <div className="table__row-item">18 (254 мм2)</div>
-                <div className="table__row-item">20 (314 мм2)</div>
-                <div className="table__row-item">22 (380 мм2)</div>
-                <div className="table__row-item">25 (491 мм2)</div>
-                <div className="table__row-item">28 (616 мм2)</div>
-                <div className="table__row-item">32 (804 мм2)</div>
-                <div className="table__row-item">36 (1018 мм2)</div>
-                <div className="table__row-item">40 (1256 мм2)</div>
+                <div className="table__head-item">{t("diameter")}</div>
+                <div className="table__row-item">6 (28,3 {t("millimeters")})</div>
+                <div className="table__row-item">8 (50,3 {t("millimeters")})</div>
+                <div className="table__row-item">10 (78,5 {t("millimeters")})</div>
+                <div className="table__row-item">12 (113 {t("millimeters")})</div>
+                <div className="table__row-item">14 (154 {t("millimeters")})</div>
+                <div className="table__row-item">16 (201 {t("millimeters")})</div>
+                <div className="table__row-item">18 (254 {t("millimeters")})</div>
+                <div className="table__row-item">20 (314 {t("millimeters")})</div>
+                <div className="table__row-item">22 (380 {t("millimeters")})</div>
+                <div className="table__row-item">25 (491 {t("millimeters")})</div>
+                <div className="table__row-item">28 (616 {t("millimeters")})</div>
+                <div className="table__row-item">32 (804 {t("millimeters")})</div>
+                <div className="table__row-item">36 (1018 {t("millimeters")})</div>
+                <div className="table__row-item">40 (1256 {t("millimeters")})</div>
             </div>
             <div className="table__col">
-                <div className="table__head-item">А240С <p>(370 Н/мм2)</p></div>
+                <div className="table__head-item">А240С <p>{t("steelrebar")}</p></div>
                 <div className="table__row-item">1.07</div>
                 <div className="table__row-item">1.90</div>
                 <div className="table__row-item">2.96</div>
@@ -38,7 +41,7 @@ const Table = () => {
                 <div className="table__row-item">47.37</div>
             </div>
             <div className="table__col">
-                <div className="table__head-item">А400С <p>(500 Н/мм2)</p></div>
+                <div className="table__head-item">А400С <p>{"steelrebar2"}</p></div>
                 <div className="table__row-item">1.44</div>
                 <div className="table__row-item">2.56</div>
                 <div className="table__row-item">4.00</div>
@@ -55,7 +58,7 @@ const Table = () => {
                 <div className="table__row-item">64.02</div>
             </div>
             <div className="table__col">
-                <div className="table__head-item">А500С <p>(600 Н/мм2)</p></div>
+                <div className="table__head-item">А500С <p>{t("steelrebar3")}</p></div>
                 <div className="table__row-item">1.73</div>
                 <div className="table__row-item">3.08</div>
                 <div className="table__row-item">4.80</div>
@@ -72,7 +75,7 @@ const Table = () => {
                 <div className="table__row-item">76.82</div>
             </div>
             <div className="table__col">
-                <div className="table__head-item">Композитна арматура <p>ДСТУ 9065:2021</p> <p>(1100 Н/мм2)</p></div>
+                <div className="table__head-item">{t("rebar")}</div>
                 <div className="table__row-item">3.17</div>
                 <div className="table__row-item">5.64</div>
                 <div className="table__row-item">8.80</div>

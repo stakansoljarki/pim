@@ -1,6 +1,5 @@
 .characteristics {
-    padding: 120px 0 80px;
-    background-color: $light-gray;
+    padding: 120px 0 120px;
 
     &__container {
         @extend .container;
@@ -8,7 +7,7 @@
     &__title {
         @include font-style($open-sans-regular, 34px, $black);
 
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         text-align: center;
         font-weight: 900;
     }
