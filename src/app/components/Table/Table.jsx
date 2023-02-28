@@ -72,7 +72,7 @@ const Table = () => {
                 custom={0.6}
                 variants={textAnimation}
                 className="table__col">
-                <div className="table__head-item">А400С <p>{"steelrebar2"}</p></div>
+                <div className="table__head-item">А400С <p>{t("steelrebar2")}</p></div>
                 <div className="table__row-item">1.44</div>
                 <div className="table__row-item">2.56</div>
                 <div className="table__row-item">4.00</div>
