@@ -51,14 +51,6 @@
   }
   &__photo-wrap {
     width: 50%;
-    &:hover {
-      cursor: pointer;
-      .lira {
-        &__img {
-          transform: scale(1.1);
-        }
-      }
-    }
   }
   &__link {
     display: inline-block;
@@ -66,6 +58,14 @@
     margin: 0 auto;
     &:not(:first-child) {
       display: none;
+    }
+    &:hover {
+      cursor: pointer;
+      .lira {
+        &__img {
+          transform: scale(1.1);
+        }
+      }
     }
   }
   &__img {
@@ -80,6 +80,9 @@
     &__text-wrap,
     &__photo-wrap {
       width: 100%;
+    }
+    &__text-wrap {
+      margin-bottom: 40px;
     }
   }
   @media (max-width: 767px) {

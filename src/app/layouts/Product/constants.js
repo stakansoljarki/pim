@@ -17,6 +17,7 @@ const productData = [
         alt: '',
         title: '1',
         description: '1d',
+        custom: '0.4',
     },
     {
         id: '2',
@@ -24,6 +25,7 @@ const productData = [
         alt: '',
         title: '2',
         description: '2d',
+        custom: '0.6',
     },
     {
         id: '3',
@@ -31,6 +33,7 @@ const productData = [
         alt: '',
         title: '3',
         description: '3d',
+        custom: '0.8',
     },
     {
         id: '4',
@@ -38,6 +41,7 @@ const productData = [
         alt: '',
         title: '4',
         description: '4d',
+        custom: '1',
     },
     {
         id: '5',
@@ -45,6 +49,7 @@ const productData = [
         alt: '',
         title: '5',
         description: '5d',
+        custom: '1.2',
     },
     {
         id: '6',
@@ -52,6 +57,7 @@ const productData = [
         alt: '',
         title: '6',
         description: '6d',
+        custom: '1.4',
     },
     {
         id: '7',
@@ -59,6 +65,7 @@ const productData = [
         alt: '',
         title: '7',
         description: '7d',
+        custom: '1.6',
     },
     {
         id: '8',
@@ -66,6 +73,7 @@ const productData = [
         alt: '',
         title: '8',
         description: '8d',
+        custom: '1.8',
     },
     {
         id: '9',
@@ -73,6 +81,7 @@ const productData = [
         alt: '',
         title: '9',
         description: '9d',
+        custom: '2',
     },
     {
         id: '10',
@@ -80,6 +89,7 @@ const productData = [
         alt: '',
         title: '10',
         description: '10d',
+        custom: '2.2',
     },
     {
         id: '11',
@@ -87,6 +97,7 @@ const productData = [
         alt: '',
         title: '11',
         description: '11d',
+        custom: '2.4',
     },
 ]
 

@@ -1,20 +1,51 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {useTranslation} from "react-i18next";
 
-import ProductCard from "../../components/Product-card/Product-card";
 
 import productData from "./constants";
+import {MProductCard} from "../../components/Product-card/Product-card";
+
+const textAnimation = {
+    hidden: {
+        y: 100,
+        opacity: 0,
+    },
+    visible: custom=> ({
+        y: 0,
+        opacity: 1,
+        transition: {delay: custom * 0.3}
+    }),
+}
 
 const Product = () => {
     const {t} = useTranslation();
 
     return (
-        <section className="product">
+        <section
+            className="product"
+        >
             <div className="product__container">
-                <h2 className="product__title">{t("composite rebar")}</h2>
-                <div className="product__cards">
+                <motion.h2
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.2, once: true}}
+                    custom={0.2}
+                    variants={textAnimation}
+                    className="product__title"
+                >
+                    {t("composite rebar")}
+                </motion.h2>
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.2, once: true}}
+                    custom={0.4}
+                    className="product__cards">
                     {productData.map((productItem) => (
-                        <ProductCard
+                        <MProductCard
+                            custom={productItem.custom}
+                            variants={textAnimation}
                             key={productItem.id}
                             src={productItem.src}
                             alt={productItem.alt}
@@ -22,7 +53,7 @@ const Product = () => {
                             description={t(productItem.description)}
                         />
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     )
