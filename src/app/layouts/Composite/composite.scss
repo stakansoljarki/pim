@@ -6,7 +6,7 @@
     position: relative;
 
     &__title {
-        @include font-style($open-sans-regular, 50px, $white);
+        @include font-style($open-sans-regular, 44px, $white);
         @include beveled-corners($red, 30px);
 
         text-transform: uppercase;

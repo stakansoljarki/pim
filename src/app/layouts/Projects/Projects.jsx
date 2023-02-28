@@ -1,6 +1,7 @@
 import React from "react";
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
+import {useTranslation} from "react-i18next";
 
 import lvivData from "./constantsLviv";
 import ternopilData from "./constantsTernopil";
@@ -20,11 +21,14 @@ import livanData from "./constantsLivan";
 import airportData from "./constantsAirport";
 import minerData from "./constantsMiner";
 
+
 const Projects = () => {
+    const {t} = useTranslation();
+
     return (
         <section className="projects" id="projects">
             <div className="projects__container">
-                <h2 className="projects__title">Наші проєкти</h2>
+                <h2 className="projects__title">{t("projects")}</h2>
                 <div className="projects__wrap">
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -39,7 +43,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Трамвайні колії, м.Львів</h3>
+                        <h3 className="projects__heading">{t("Tram tracks")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -54,7 +58,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Шляхопровід, м.Тернопіль</h3>
+                        <h3 className="projects__heading">{t("Highway")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -69,7 +73,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Фундаментна плита, м.Херсон</h3>
+                        <h3 className="projects__heading">{t("Foundation slab")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -84,7 +88,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Стрижень із АКС</h3>
+                        <h3 className="projects__heading">{t("FRP rod")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -99,7 +103,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Сваї і фундаменти у Лісниках</h3>
+                        <h3 className="projects__heading">{t("Piles")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -114,7 +118,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Промислове бетонування</h3>
+                        <h3 className="projects__heading">{t("concrete")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -129,7 +133,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Прибудинкова територія, бетонування плит Київ</h3>
+                        <h3 className="projects__heading">{t("Precinct territory")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -144,7 +148,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Обстеження у м.Ірпінь</h3>
+                        <h3 className="projects__heading">{t("Inspection in Irpin")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -159,7 +163,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Монолітне перекриття</h3>
+                        <h3 className="projects__heading">{t("Monolithic overlap")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -174,7 +178,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">ЗБВ</h3>
+                        <h3 className="projects__heading">{t("Composite concrete products")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -189,7 +193,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Дорожні плити</h3>
+                        <h3 className="projects__heading">{t("Road slabs")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -204,7 +208,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Випробування плит ДП НДВБК</h3>
+                        <h3 className="projects__heading">{t("NDIBK")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -219,7 +223,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Випробування арматури КПІ</h3>
+                        <h3 className="projects__heading">{t("KPI")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -234,7 +238,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Використання в міжкладочних швах</h3>
+                        <h3 className="projects__heading">{t("seams")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -249,7 +253,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Бетонування фонтану у Лівані</h3>
+                        <h3 className="projects__heading">{t("Lebanon")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -264,7 +268,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Аеропорт у м.Вінниця</h3>
+                        <h3 className="projects__heading">{t("Vinnytsia Airport")}</h3>
                     </div>
                     <div className="projects__item">
                         <div className="projects__inner">
@@ -279,7 +283,7 @@ const Projects = () => {
                                 </a>
                             ))}
                         </div>
-                        <h3 className="projects__heading">Ватутіне стадіон Шахтар</h3>
+                        <h3 className="projects__heading">{t("Vatutine Stadium Shakhtar")}</h3>
                     </div>
                 </div>
             </div>

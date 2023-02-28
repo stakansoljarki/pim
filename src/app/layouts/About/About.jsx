@@ -1,11 +1,17 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 const About = () => {
+    const {t} = useTranslation();
+
     return (
         <section className="about" id="about">
             <div className="about__container">
-                <h2 className="about__title">Про нас</h2>
-                <p className="about__description">Компанія <span className="about__bold">СВІТ КОМПОЗИТІВ</span> – будівелька компанія, яка реалізує проєкти з використанням композитних матеріалів, в тому числі композитної арматури та стрижнів із АКС. За 6 років існування нашої компанії, ми успішно реалізували велику кількість проєктів як на території України так і за її межами. </p>
+                <h2 className="about__title">{t("about")}</h2>
+                <p className="about__description">
+                    <span className="about__bold">{t("about name")}</span>
+                    {t("about description")}
+            </p>
             </div>
         </section>
     )
